@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Proyecto</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <form class="ingreso_datos" action="php/proceso.php" method="post">
+      
+        <div class="contenedor">
+            <h1>DOMdocument</h1>
+            <div class="input-contenedor">
+                <input type="text" placeholder="Pagina web" id="url" value="" name="url">
+            </div>
+         
+            <div class="input-contenedor">
+                <select name="opcion" id="">
+                    <option disabled="disabled">Opciones propuestas</option>
+                    <option value="ninguna">Ninguna</option>
+                    <option value="estructura_basica">Estructura Basica</option>
+                    <option value="campus_virtual_unah">Campus Virtual UNAH</option>
+                    <option value="blog_ing">Blog Ing.Avila</option>
+                </select>
+            </div>
+            <input type="submit" value="Procesar" class="button">
+        </div>
+
+    </form>
+
+
+
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/agregar.js"></script>
+
+</body>
+</html>
