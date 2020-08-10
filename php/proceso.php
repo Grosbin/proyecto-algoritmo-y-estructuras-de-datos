@@ -1,6 +1,7 @@
 <?php
 
 include 'validacion.php';
+include '../Pruebas php/prueba1.php';
 
 $stringPaginadePrueba='<!DOCTYPE html>
 <html lang="en">
@@ -21,15 +22,17 @@ $stringPaginadePrueba='<!DOCTYPE html>
 </body>
 </html>';
 
+echo evaluacionEtiquetas($pagina_inicio);
+
 //$pagina_validacion=$pagina_inicio;
 //$arrayHtml1= htmlspecialchars_decode($pagina_inicio);
 //$arrayHtml= htmlspecialchars($pagina_inicio);
 //$newArray=[];
-for ($i=0; $i < strlen($pagina_inicio) ; $i++) { 
+/*for ($i=0; $i < strlen($pagina_inicio) ; $i++) {
     if ($pagina_inicio[$i]=='<'){
         echo $i.') '.$pagina_inicio[$i].'<br>';
     }
-}
+}*/
 //var_dump($arrayHtml1);
 //echo htmlspecialchars_decode($pagina_validacion);
 
