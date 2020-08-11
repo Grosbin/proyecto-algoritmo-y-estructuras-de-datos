@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72be2f0c-55b1-49c9-b291-537301e5012d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/listas/LinkedList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pruebas php/prueba1.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pruebas php/prueba1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/proceso.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/proceso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/LinkedList.php" beforeDir="false" afterPath="$PROJECT_DIR$/listas/LinkedList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas/terminalSLL.php" beforeDir="false" afterPath="$PROJECT_DIR$/listas/terminalSLL.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -36,7 +42,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597028954292</updated>
-      <workItem from="1597028955526" duration="1426000" />
+      <workItem from="1597028955526" duration="1755000" />
+      <workItem from="1597107346389" duration="1760000" />
     </task>
     <servers />
   </component>
@@ -48,5 +55,20 @@
       <screen x="0" y="26" width="1366" height="742" />
     </state>
     <state x="328" y="26" width="700" height="740" key="#PHP/0.26.1366.742@0.26.1366.742" timestamp="1597029014840" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/listas/terminalSLL.php</url>
+          <line>124</line>
+          <properties>
+            <option name="className" value="" />
+            <option name="methodName" value="\imprimir" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -122,7 +122,20 @@ function probarRemociones() {
     echo 'No quedan elementos: ', $r7, PHP_EOL;
 }
 
+function probarImprimir(){
+$lista=new LinkedList();
+
+$lista->addFirst(10);
+$lista->addFirst('Hola Mundo');
+$lista->addLast('katy');
+
+return $lista->to_array();
+//return $lista->imprimir();
+
+
+}
+print_r(probarImprimir());
 //probarListaVacia();
 //probarPrimerElemento();
-probarInserciones();
+//probarInserciones();
 //probarRemociones();

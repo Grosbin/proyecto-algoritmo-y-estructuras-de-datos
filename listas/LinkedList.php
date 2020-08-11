@@ -155,4 +155,19 @@ class LinkedList implements InterfaceList
 
         return $this->ultimo->get_dato();
     }
+
+
+    public function imprimir(){
+        $datos=0;;
+        $item = $this->primero;
+
+        while ($item != NULL) 
+        {
+            $datos=$this->dato;
+            $item = $item->siguiente;
+        }
+        return $datos;
+        
+    
+    }
 }
