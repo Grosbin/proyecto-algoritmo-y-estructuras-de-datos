@@ -2,7 +2,7 @@
 
 
 class Etiquetas{
-    private $valor=195;
+    private $valor=0;
 
     public function set_valor($contador){
         $this->valor=$contador;
@@ -13,30 +13,39 @@ class Etiquetas{
     function evaluacionEtiquetas($x){
        
         $contador=$this->get_valor();
-        $newString='';
+       
         $continuar=true;
     
         for ($i=$contador; $i < strlen($x); $i++) {
-            if ($x[$i]!='<'&&$x[$i]!='>'){
+            if ($x[$i]!='<'&&$x[$i]!='>'&&$x[$i+1]!='/'){
+                $newString='';
                 $newString.=$x[$i];
-                //echo 'si funciona la funcion';
                 $contador++;
+                $this->set_valor($contador);
+             
+                //echo 'si funciona la funcion';
+            break;
+            
             }
-            if($x[$i]=='>'){
+            
+            /*if($x[$i]=='>'){
+                echo '<br>';
                 echo $contador.'<br>';
                 $this->set_valor($contador);
-            return $newString;
-            }
-           
+                //$contador++;
+            //return $newString;
+            //break;
+            }*/
+          
+            $this->set_valor($contador);
         }
-       // echo '<br>';
+       
        // var_dump($newString);
-       // echo 'valor ->'>$x[$valor].'<br>';
-        //echo 'Este es el valor del contador ->'.$valor.'<br>';
-        //echo 'si funciona la funcion';
+        $this->set_valor($contador);
+        
+        //$this->set_string($newString);
     return $newString;
     }
-
 
 
 
