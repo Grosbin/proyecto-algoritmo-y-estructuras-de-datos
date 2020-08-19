@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="72be2f0c-55b1-49c9-b291-537301e5012d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/LinkedList.php" beforeDir="false" afterPath="$PROJECT_DIR$/listas/LinkedList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas/terminalSLL.php" beforeDir="false" afterPath="$PROJECT_DIR$/listas/terminalSLL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/etiquetas.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/etiquetas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/proceso.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/proceso.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/php/etiquetas.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="1ftEOAtUqiM1IyRv74aSAy4upRC" />
@@ -44,6 +47,10 @@
       <updated>1597028954292</updated>
       <workItem from="1597028955526" duration="1755000" />
       <workItem from="1597107346389" duration="1760000" />
+      <workItem from="1597291546349" duration="967000" />
+      <workItem from="1597442047092" duration="1212000" />
+      <workItem from="1597445714198" duration="20000" />
+      <workItem from="1597801976137" duration="2328000" />
     </task>
     <servers />
   </component>
@@ -55,6 +62,10 @@
       <screen x="0" y="26" width="1366" height="742" />
     </state>
     <state x="328" y="26" width="700" height="740" key="#PHP/0.26.1366.742@0.26.1366.742" timestamp="1597029014840" />
+    <state x="466" y="157" width="424" height="480" key="FileChooserDialogImpl" timestamp="1597445730833">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="466" y="157" width="424" height="480" key="FileChooserDialogImpl/0.26.1366.742@0.26.1366.742" timestamp="1597445730833" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
