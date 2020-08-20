@@ -36,6 +36,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,6 +52,7 @@
       <workItem from="1597442047092" duration="1212000" />
       <workItem from="1597445714198" duration="20000" />
       <workItem from="1597801976137" duration="2328000" />
+      <workItem from="1597880734556" duration="8841000" />
     </task>
     <servers />
   </component>
@@ -66,6 +68,10 @@
       <screen x="0" y="26" width="1366" height="742" />
     </state>
     <state x="466" y="157" width="424" height="480" key="FileChooserDialogImpl/0.26.1366.742@0.26.1366.742" timestamp="1597445730833" />
+    <state x="172" y="32" key="SettingsEditor" timestamp="1597880897238">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="172" y="32" key="SettingsEditor/0.26.1366.742@0.26.1366.742" timestamp="1597880897238" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

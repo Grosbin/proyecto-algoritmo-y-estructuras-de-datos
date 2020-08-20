@@ -10,47 +10,35 @@ class Etiquetas{
     public function get_valor(){
         return $this->valor;
     }
-    public function evaluacionDeEtiqutas2($paginaWeb)
+    public function body($paginaWeb)
     {
-        echo $paginaWeb;
-        $html = file_get_html($paginaWeb);
+        $html= file_get_html($paginaWeb);
 
-        foreach ($html->find('html') as $e) {
-            echo $e->src . '<br>';
-        }
-
-        /*$html = file_get_html('http://slashdot.org/');
-
-
-        foreach($html->find('div.article') as $article) {
-        $item['title']     = $article->find('div.title', 0)->plaintext; // extrae el título
-        $item['intro']    = $article->find('div.intro', 0)->plaintext;  // extrae la intro
-        $item['details'] = $article->find('div.details', 0)->plaintext; // extrae los detalles
-        $articles[] =
-
-
-        }*/
+    foreach($html->find('body') as $article) {
+         $article->children();
+        //$html->children();
+        //$body[] = $item;
     }
-    /*
-    function evaluacionEtiquetas($x){
-       
-        $contador=$this->get_valor();
-       
-        $continuar=true;
+    $html->clear();
+    unset($html);
+    return $body;
+    }
     
-        for ($i=$contador; $i < strlen($x); $i++) {
-            if ($x[$i]!='<'&&$x[$i]!='>'){
+    function evaluacionEtiquetas($x){
+        $stringPagina=file_get_contents($x);
+        $contador=$this->get_valor();
+
+        for ($i=$contador; $i < strlen($stringPagina); $i++) {
+            if ($stringPagina[$i]!= chr(60) &&$stringPagina[$i]!=chr(62)){
                 $newString='';
-                $newString.=$x[$i];
+                $newString.=$stringPagina[$i];
                 $contador++;
                 $this->set_valor($contador);
-             
                 //echo 'si funciona la funcion';
             break;
             
             }
-            
-            if($x[$i]=='>'){
+            if($stringPagina[$i]=='>'){
                 echo '<br>';
                 echo $contador.'<br>';
                 $this->set_valor($contador);
@@ -58,8 +46,8 @@ class Etiquetas{
             //return $newString;
             //break;
             }
-          
             $this->set_valor($contador);
+            break;
         }
        
        // var_dump($newString);
@@ -67,8 +55,14 @@ class Etiquetas{
         
         //$this->set_string($newString);
     return $newString;
-    }   
-    */
+    }
+    public function organizacionEtiquetas($x){
+     if ($this->evaluacionEtiquetas($x)=='hhead'){
+         echo 'si encontro el head';
+     }
+        echo 'si entro a la funcion';
+    }
+    
     
 }
 
