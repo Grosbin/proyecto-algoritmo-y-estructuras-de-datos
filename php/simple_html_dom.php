@@ -126,7 +126,7 @@ function dump_html_tree($node, $show_attr = true, $deep = 0)
 class simple_html_dom_node
 {
 	public $nodetype = HDOM_TYPE_TEXT;
-	public $tag = 'text';
+	//public $tag = 'text';
 	public $attr = array();
 	public $children = array();
 	public $nodes = array();
@@ -212,7 +212,7 @@ class simple_html_dom_node
 			$string .= " text: ({$this->text})";
 		}
 
-		$string .= ' HDOM_INNER_INFO: ';
+		//$string .= ' HDOM_INNER_INFO: ';
 
 		if (isset($node->_[HDOM_INFO_INNER])) {
 			$string .= "'" . $node->_[HDOM_INFO_INNER] . "'";
@@ -221,9 +221,9 @@ class simple_html_dom_node
 		}
 
 		$string .= ' children: ' . count($this->children);
-		$string .= ' nodes: ' . count($this->nodes);
-		$string .= ' tag_start: ' . $this->tag_start;
-		$string .= "\n";
+		//$string .= ' nodes: ' . count($this->nodes);
+		//$string .= ' tag_start: ' . $this->tag_start;
+		//$string .= "\n";
 
 		if ($echo) {
 			echo $string;
