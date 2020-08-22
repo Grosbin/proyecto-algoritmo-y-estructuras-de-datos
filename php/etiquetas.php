@@ -10,6 +10,23 @@ class Etiquetas{
     public function get_valor(){
         return $this->valor;
     }
+    public function bodyBusqueda($paginaWeb) {
+        $html= file_get_html($paginaWeb);
+        $turn = null;
+        foreach($html->find('body') as $article) {
+            $turn = $article;
+        }
+        return $turn;
+    }
+    public function headBusqueda($paginaWeb) {
+        $html= file_get_html($paginaWeb);
+        $turn = null;
+        foreach($html->find('body') as $article) {
+            $turn = $article;
+        }
+        return $turn;
+    }
+    
     public function body ($paginaWeb) {
         $html= file_get_html($paginaWeb);
     
@@ -37,9 +54,7 @@ class Etiquetas{
         $body=null;
     foreach($html->find('body') as $article) {
         $body=$article->children();
-        //$body=$article->children(2)->attr;
-        //$html->children();
-        //$body[] = $item;
+     
     }
     $html->clear();
     unset($html);
@@ -67,12 +82,12 @@ class Etiquetas{
         $contador=$this->get_valor();
 
         for ($i=$contador; $i < strlen($stringPagina); $i++) {
-            if ($stringPagina[$i]!= chr(60) &&$stringPagina[$i]!=chr(62)){
+            if ($stringPagina[$i]!= chr(60) &&$stringPagina[$i]!=chr(62)){//60= < 62 = >
                 $newString='';
                 $newString.=$stringPagina[$i];
                 $contador++;
                 $this->set_valor($contador);
-                //echo 'si funciona la funcion';
+       
             break;
             
             }
@@ -80,26 +95,19 @@ class Etiquetas{
                 echo '<br>';
                 echo $contador.'<br>';
                 $this->set_valor($contador);
-                //$contador++;
-            //return $newString;
-            //break;
+          
             }
             $this->set_valor($contador);
             break;
         }
        
-       // var_dump($newString);
+    
         $this->set_valor($contador);
         
-        //$this->set_string($newString);
+     
     return $newString;
     }
-    public function organizacionEtiquetas($x){
-     if ($this->evaluacionEtiquetas($x)=='hhead'){
-         echo 'si encontro el head';
-     }
-        echo 'si entro a la funcion';
-    }
+
     
     
 }

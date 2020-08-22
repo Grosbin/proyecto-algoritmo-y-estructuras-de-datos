@@ -23,6 +23,3 @@
         break;
     }
     
-// $pagina_inicio = file_get_contents('../html/Campus Virtual UNAH.html');
-//https://www.instagram.com/
-//https://www.google.com/
