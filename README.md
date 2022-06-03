@@ -1,23 +1,5 @@
 # Proyecto-Algoritmo-y-Estructuras-de-Datos
 
-
-
-//Integrantes:
-===============
- /** 
- * Cyntia Melissa Reyes Coot 
- * 20171003604
- * 
- * Marisa Elizabeth Pineda Pavon 
- * 20161004945
- * 
- * Luis Daniel Mejía Valladares
- * 20181006117
- * 
- * Grosbin Roberto Rivera Betancourth
- * 20181006140
- */
-
 //Instrucciones necesarias para instalar y utilizar la aplicación.
 ==================================================================
 
